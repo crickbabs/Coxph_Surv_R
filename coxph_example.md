@@ -29,7 +29,9 @@ When analysis survival differentials in a data set, a vast range of variables wi
     - Note: we can (should) also do that with the start of the observation period when doing left-censoring.
   + The time unit of the study has to be well specified and uniform across the data set of interest. Depending on the experimental design, it can be hours, days, months or even years. Making it too coarse will render unprecise results, while making it too thin will make the model over-complicated. For a cancer survival analysis, months or years are appropriate time scales.
   
-![Example: censoring from a Truck durability analysis. Here, the outcome of interest is 1st ever service; The observation period is set between June 2010 and June 2013. T_start = purchase time, note that these can also fall outside the observation period - we then "left-censor" them. T_end = time of first ever service, or end of observation period, whichever comes first - that's "right-censoring"](censoring.png)
+![](censoring.png)
+
+Example: censoring from a Truck durability analysis. Here, the outcome of interest is 1st ever service; The observation period is set between June 2010 and June 2013. T_start = purchase time, note that these can also fall outside the observation period - we then "left-censor" them. T_end = time of first ever service, or end of observation period, whichever comes first - that's "right-censoring"
 
 ### A note on confounders
 
